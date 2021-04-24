@@ -1,31 +1,83 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
-export default function Nav() {
+export default function Nav(props) {
+  const [isOpen, setIsOpen] = useState(true);
+
+  function handleOpen(e) {
+    e.preventDefault();
+    setIsOpen(true);
+  }
+
+  function handleClose(e) {
+    e.preventDefault();
+    setIsOpen(false);
+  }
+
   return (
-    <div className="block w-full bg-white py-4 px-8 bg-white-700 text-black flex justify-between items-center border-b shadow fixed z-10000">
-      <div className="text-2xl font-semibold text-gray-900 transform hover:text-gray-800 transition duration-500 ease-in-out hover:-translate-y-1">
+    <nav className="relative md:fixed h-16 w-full bg-white shadow border-b">
+      <div className="absolute left-4 top-4 text-2xl font-semibold text-gray-900 transform hover:text-gray-800 transition duration-500 ease-in-out hover:-translate-y-1">
         <Link href="#home">Nico Jarvinen</Link>
       </div>
-      <div className="items-center hidden md:flex lg:flex xl:flex 2xl:flex">
-        <div className="ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
-          <Link href="#home">Home</Link>
+
+      {isOpen ? (
+        <div
+          onClick={handleClose}
+          className="hidden absolute cursor-pointer right-4 top-1/2 transform -translate-x-4 -translate-y-1/2 z-10"
+        >
+          <div className="w-7 h-1 bg-white m-1"></div>
+          <div className="w-7 h-1 bg-white m-1"></div>
+          <div className="w-7 h-1 bg-white m-1"></div>
         </div>
-        <div className="ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
-          <Link href="#about">About</Link>
+      ) : (
+        <div
+          onClick={handleOpen}
+          className="absolute block md:hidden cursor-pointer right-4 top-1/2 transform -translate-x-4 -translate-y-1/2 z-10"
+        >
+          <div className="w-7 h-1 bg-black m-1"></div>
+          <div className="w-7 h-1 bg-black m-1"></div>
+          <div className="w-7 h-1 bg-black m-1"></div>
         </div>
-        <div className="ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
-          <Link href="#work">Projects</Link>
+      )}
+      {isOpen ? (
+        <div className="flex flex-col justify-around items-left text-white right-0 fixed h-screen w-1/2 bg-blue-600">
+          <div
+            onClick={handleClose}
+            className="absolute cursor-pointer right-4 top-8 transform -translate-x-4 -translate-y-1/2 z-10"
+          >
+            <div className="w-7 h-1 bg-white m-1"></div>
+            <div className="w-7 h-1 bg-white m-1"></div>
+            <div className="w-7 h-1 bg-white m-1"></div>
+          </div>
+          <div className="text-2xl ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
+            <Link href="#home">Home</Link>
+          </div>
+          <div className="text-2xl ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
+            <Link href="#about">About</Link>
+          </div>
+          <div className="text-2xl ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
+            <Link href="#work">Projects</Link>
+          </div>
+          <div className="text-2xl ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
+            <Link href="#contact">Contact Me</Link>
+          </div>
         </div>
-        <div className="ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
-          <Link href="#contact">Contact Me</Link>
+      ) : (
+        <div className="hidden md:flex md:flex-row items-center justify-end py-4 ml-auto pr-4 ">
+          <div className="ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
+            <Link href="#home">Home</Link>
+          </div>
+          <div className="ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
+            <Link href="#about">About</Link>
+          </div>
+          <div className="ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
+            <Link href="#work">Projects</Link>
+          </div>
+          <div className="ml-8 transform hover:text-gray-800 transition ease-in-out duration-500 hover:scale-110">
+            <Link href="#contact">Contact Me</Link>
+          </div>
         </div>
-      </div>
-      <div className="tham tham-e-squeeze tham-w-8 2xl:hidden xl:hidden lg:hidden md:hidden sm:block">
-        <div className="tham-box">
-          <div className="tham-inner" />
-        </div>
-      </div>
-    </div>
+      )}
+    </nav>
   );
 }

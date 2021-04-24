@@ -4,7 +4,7 @@ import Card from "../components/Card";
 export default function Home() {
   return (
     <div className="flex flex-col w-full min-h-screen justfy-center items-center">
-      <div className="flex flex-col md:flex-row md:justify-between justify-center items-center w-4/6 mt-40 md:mt-12">
+      <div className="flex flex-col md:flex-row md:justify-between justify-center items-center w-4/6 mt-4 mb-16 md:mt-24 lg:mt-12">
         <div className="">
           <h1 className="mt-24 text-left text-gray-900 text-5xl my-6 font-semibold sm:text-4xl lg:text-7xl">
             Second year
@@ -15,7 +15,7 @@ export default function Home() {
           <p className="text-gray-500">Web development is my passion.</p>
           <a href="#contact">
             <button className="mt-8 bg-blue-600 rounded-lg p-4 shadow-md text-white hover:bg-blue-900 rounded p-4 shadow-md text-white focus:rounded p-4 text-white">
-              Contact me <span className="animate-bounce">&rarr;</span>
+              Contact me <span>&rarr;</span>
             </button>
           </a>
         </div>
@@ -24,9 +24,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="about" className="my-14 hidden md:block"></div>
+      <div id="about" className="mt-44 mb-12"></div>
 
-      <div className="flex flex-col space-x-4 mt-48 md:my-0 sm:flex-row md:flex-row md:justify-between sm:justify-center w-4/6">
+      <div className="flex flex-col space-x-4 mt-32 md:my-0 sm:flex-row md:flex-row md:justify-between sm:justify-center w-4/6">
         <div className="sm:w-1/2 xl:w-1/2">
           <h1 className="max-w-2xl text-5xl lg: md:text-6xl font-semibold max-w-xs mt-12">
             About me
@@ -122,7 +122,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="contact" className="my-10 hidden md:block"></div>
+      <div id="contact" className="mb-4"></div>
 
       <div className="flex flex-col justify-between md:flex-row md:space-x-6 md:space-y-0 space-y-6 bg-blue-600 w-full max-w-4xl p-8 my-24 rounded-xl shadow-lg text-white">
         <div className="flex flex-col justify-between space-y-8">

@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <div id="home" className="m-0 p-0 border-box">
+      <div className="m-0 p-0 border-box">
         <Component {...pageProps} />
       </div>
     </Layout>
