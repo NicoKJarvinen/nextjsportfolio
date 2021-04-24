@@ -166,14 +166,15 @@ export default function Home() {
               data-netlify="true"
               className="flex flex-col space-y-4"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <div>
                 <label htmlFor="name" className="text-sm">
                   Your name
                 </label>
                 <input
+                  type="text"
                   id="name"
                   name="name"
-                  type="text"
                   placeholder="Your name"
                   className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
                 />
@@ -183,9 +184,9 @@ export default function Home() {
                   Email Address
                 </label>
                 <input
+                  type="text"
                   id="email"
                   name="email"
-                  type="text"
                   placeholder="Email Address"
                   className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-blue-300"
                 />
