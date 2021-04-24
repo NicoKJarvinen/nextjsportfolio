@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 export default function Nav(props) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   function handleOpen(e) {
     e.preventDefault();
