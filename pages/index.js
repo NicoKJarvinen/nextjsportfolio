@@ -204,7 +204,10 @@ export default function Home() {
                   focus:ring-2 focus:ring-blue-300"
                 ></textarea>
               </div>
-              <button className="inline-block self-end bg-blue-400 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm hover:bg-blue-900">
+              <button
+                type="submit"
+                className="inline-block self-end bg-blue-400 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm hover:bg-blue-900"
+              >
                 Send Message
               </button>
             </form>
