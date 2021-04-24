@@ -13,23 +13,37 @@ export default function Home() {
             engineering student.
           </h1>
           <p className="text-gray-500">Web development is my passion.</p>
-          <a href="#contact">
-            <button className="mt-8 bg-blue-600 rounded-lg p-4 shadow-md text-white hover:bg-blue-900 rounded p-4 shadow-md text-white focus:rounded p-4 text-white">
-              Contact me <span>&rarr;</span>
+          <a href="#contact" className="">
+            <button className="inline-flex self-center mt-4 w-auto bg-blue-600 rounded-lg shadow-md text-white hover:bg-blue-900 rounded shadow-md text-white focus:rounded p-4 text-white">
+              <svg
+                className="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              <span>Contact me</span>
             </button>
           </a>
         </div>
         <div className=" items-center mt-32 ml-12 hidden md:flex">
           <img className="" src="/static/images/profileDraw.svg" alt="/" />
         </div>
-        <div className="self-end mt-24 h-10 w-10 block md:hidden">
+        <div className="self-end mt-36 h-16 w-16 block md:hidden bg-blue-600 rounded-full p-2 shadow-2xl -z-1">
           <a href="#about">
             <svg
-              className="animate-bounce"
+              className="animate-bounce -z-1 cursor-pointer w-12 h-12"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="white"
             >
               <path
                 stroke-linecap="round"
@@ -42,9 +56,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="about" className="mt-44 mb-12"></div>
+      <div id="about" className="mt-3 md:mt-44 sm:mt-32"></div>
 
-      <div className="flex flex-col space-x-4 mt-32 md:my-0 sm:flex-row md:flex-row md:justify-between sm:justify-center w-4/6">
+      <div className="flex flex-col space-x-4 md:my-0 sm:flex-row md:flex-row md:justify-between sm:justify-center w-4/6">
         <div className="sm:w-1/2 xl:w-1/2">
           <h1 className="max-w-2xl text-5xl lg: md:text-6xl font-semibold max-w-xs mt-12">
             About me

@@ -15,7 +15,7 @@ export default function Nav(props) {
   }
 
   return (
-    <nav className="relative md:fixed h-16 w-full bg-white shadow border-b">
+    <nav className="relative md:fixed h-16 w-full bg-white shadow border-b shadow-lg">
       <div className="absolute left-4 top-4 text-2xl font-semibold text-gray-900 transform hover:text-gray-800 transition duration-500 ease-in-out hover:-translate-y-1">
         <Link href="#home">Nico Jarvinen</Link>
       </div>
