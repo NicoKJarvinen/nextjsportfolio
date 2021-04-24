@@ -22,6 +22,22 @@ export default function Home() {
         <div className=" items-center mt-32 ml-12 hidden md:flex">
           <img className="" src="/static/images/profileDraw.svg" alt="/" />
         </div>
+        <div className="self-end mt-24 h-10 w-10 block md:hidden">
+          <svg
+            className="animate-bounce"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              strokeWidth="2"
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
+        </div>
       </div>
 
       <div id="about" className="mt-44 mb-12"></div>
