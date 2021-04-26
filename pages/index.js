@@ -58,7 +58,7 @@ export default function Home() {
 
       <div id="about" className="mt-3 md:mt-44 sm:mt-32"></div>
 
-      <div className="flex flex-col space-x-4 md:my-0 sm:flex-row md:flex-row md:justify-between sm:justify-center w-4/6">
+      <div className="flex flex-col space-x-4 mt-0 md:mt-8 md:my-0 sm:flex-row md:flex-row md:justify-between sm:justify-center w-4/6">
         <div className="sm:w-1/2 xl:w-1/2">
           <h1 className="max-w-2xl text-5xl lg: md:text-6xl font-semibold max-w-xs mt-12">
             About me
@@ -115,7 +115,7 @@ export default function Home() {
             title="Memoable"
             text="Agile JavaFx project"
             git="https://gitlab.metropolia.fi/nicoja/ohjelmistotuotantoprojekti-1"
-            link=""
+            link="https://gitlab.metropolia.fi/nicoja/ohjelmistotuotantoprojekti-1"
             demo="about"
             img="/static/images/memoable.png"
           ></Card>
