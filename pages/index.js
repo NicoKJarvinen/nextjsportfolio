@@ -4,9 +4,9 @@ import Card from "../components/Card";
 export default function Home() {
   return (
     <div className="flex flex-col w-full min-h-screen justfy-center items-center">
-      <div className="flex flex-col md:flex-row md:justify-between justify-center items-center w-4/6 mt-4 mb-16 md:mt-24 lg:mt-12">
+      <div className="flex flex-col md:flex-row md:justify-between justify-center items-center w-4/6 mt-2 md:mt-24 lg:mt-12">
         <div className="">
-          <h1 className="mt-24 text-left text-gray-900 text-5xl my-6 font-semibold sm:text-4xl lg:text-7xl">
+          <h1 className="mt-4md:mt-24 text-left text-gray-900 text-5xl my-6 font-semibold sm:text-4xl lg:text-7xl">
             Second year
             <span className="text-blue-600"> software</span>
             <br />
@@ -36,18 +36,18 @@ export default function Home() {
         <div className=" items-center mt-32 ml-12 hidden md:flex">
           <img className="" src="/static/images/profileDraw.svg" alt="/" />
         </div>
-        <div className="self-end mt-36 h-16 w-16 block md:hidden bg-blue-600 rounded-full p-2 shadow-2xl -z-1">
+        <div className="self-end mt-10 h-16 w-16 block sm:mt-12 md:mt-36 md:hidden bg-blue-600 rounded-full p-2 shadow-2xl -z-1">
           <a href="#about">
             <svg
-              className="animate-bounce -z-1 cursor-pointer w-12 h-12"
+              className="animate-bounce cursor-pointer w-12 h-12"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="white"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 strokeWidth="2"
                 d="M19 14l-7 7m0 0l-7-7m7 7V3"
               />
