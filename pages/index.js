@@ -6,7 +6,7 @@ export default function Home() {
     <div className="flex flex-col w-full min-h-screen justfy-center items-center">
       <div className="flex flex-col md:flex-row md:justify-between justify-center items-center w-4/6 mt-2 md:mt-24 lg:mt-12">
         <div className="">
-          <h1 className="mt-4md:mt-24 text-left text-gray-900 text-5xl my-6 font-semibold sm:text-4xl lg:text-7xl">
+          <h1 className="mt-24 md:mt-24 text-left text-gray-900 text-5xl my-6 font-semibold sm:text-4xl lg:text-7xl">
             Second year
             <span className="text-blue-600"> software</span>
             <br />
