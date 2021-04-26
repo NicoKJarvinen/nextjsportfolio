@@ -129,7 +129,7 @@ export default function Home() {
           ></Card>
           <Card
             title="Distrobat"
-            text="Endless fighting arena game"
+            text="Endless fighting game"
             git="https://gitlab.metropolia.fi/nicoja/pelikehitys-projekti"
             link="https://gitlab.metropolia.fi/nicoja/pelikehitys-projekti"
             demo="about"
